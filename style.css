@@ -49,9 +49,12 @@
   }
   
   .guessing-area {
+    width: 630px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
+    margin: 0 15px;
     margin-bottom: 60px;
   }
   
@@ -209,4 +212,27 @@
 
   #computer-wins {
     margin-top: 0;
+  }
+
+  @media only screen and (max-width: 1300px) {
+    .instructions {
+      width: 70%;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .instructions {
+      width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 650px) {
+    .guessing-area {
+      width: auto;
+      height: 700px;
+      margin-bottom: 5px;
+    }
+    .instructions {
+      width: 100%;
+    }
   }
